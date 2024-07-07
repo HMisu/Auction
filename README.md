@@ -12,6 +12,100 @@
 - 김종범 : 회원가입/로그인, 회원정보, 고객 문의사항 작성
 - 손우성 : 메인 페이지, 최근 본 경매 목록 저장, 관심 경매 등록
 ## 3. 프로젝트 구조
+<details>
+<summary>구조 보기</summary>
+
+```
+Second-Story
+├─ .gitignore
+├─ build.gradle
+├─ gradlew
+├─ gradlew.bat
+├─ settings.gradle
+└─src
+    ├─main
+    │  ├─generated
+    │  │  └─com
+    │  │      └─bit
+    │  │          └─auction
+    │  │              ├─admin
+    │  │              │  └─entity
+    │  │              ├─goods
+    │  │              │  └─entity
+    │  │              └─user
+    │  │                  └─entity
+    │  ├─java
+    │  │  └─com
+    │  │      └─bit
+    │  │          └─auction
+    │  │              ├─admin
+    │  │              │  ├─controller
+    │  │              │  ├─dto
+    │  │              │  ├─entity
+    │  │              │  ├─repository
+    │  │              │  └─service
+    │  │              │      └─impl
+    │  │              ├─common
+    │  │              │  └─dto
+    │  │              ├─configuration
+    │  │              ├─goods
+    │  │              │  ├─controller
+    │  │              │  ├─dto
+    │  │              │  ├─entity
+    │  │              │  ├─repository
+    │  │              │  │  └─impl
+    │  │              │  └─service
+    │  │              │      └─impl
+    │  │              ├─handler
+    │  │              └─user
+    │  │                  ├─controller
+    │  │                  ├─dto
+    │  │                  ├─entity
+    │  │                  ├─repository
+    │  │                  │  └─impl
+    │  │                  └─service
+    │  │                      └─impl
+    │  └─resources
+    │      ├─static
+    │      │  ├─css
+    │      │  │  ├─admin
+    │      │  │  ├─auction
+    │      │  │  ├─bid
+    │      │  │  └─user
+    │      │  │      ├─fragment
+    │      │  │      ├─login
+    │      │  │      └─mypage
+    │      │  ├─img
+    │      │  │  ├─categorymenu
+    │      │  │  ├─main
+    │      │  │  ├─mypage
+    │      │  │  ├─shopimg
+    │      │  │  └─styleImg
+    │      │  └─js
+    │      └─templates
+    │          ├─admin
+    │          ├─auction
+    │          ├─bidding
+    │          ├─fragments
+    │          ├─layouts
+    │          └─user
+    │              ├─customer
+    │              ├─login
+    │              └─mypage
+    └─test
+        └─java
+            └─com
+                └─bit
+                    └─auction
+                        ├─goods
+                        │  └─repository
+                        ├─Junit
+                        │  └─repository
+                        └─user
+                            └─controller
+```
+</details>
+
 ## 4. ERD
 ![auction](https://github.com/HMisu/Second-Story/assets/37448404/ac54db79-d60c-46f5-a476-720bd6d48dbc)
 
